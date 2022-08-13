@@ -19,7 +19,7 @@
         },
 
         {
-            "img": "https://s2.glbimg.com/D4BgwlmmJDWtjPxG4T9_8OwGPGY=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/J/7/Gj5zz6SmOaY3jRJ1z9mQ/capa-materia-gshow-16-.png",
+            "img": "https://i0.statig.com.br/bancodeimagens/5b/8g/c0/5b8gc0gy05z7mr3lmusf99hr1.jpg",
             "descricaoImg": "Dadinhos de tapioca",
             "nomePrato": "Dadinhos de tapioca",
             "descricaoPrato": "Famosos dadinhos de tapioca com queijo-de-coalho",
@@ -58,7 +58,7 @@
         },
 
         {
-            "img": "https://folhago.com.br/blogs/receitas-faceis/wp-content/uploads/2021/07/Salada-mediterranea-teleculinaria-scaled.jpg",
+            "img": "https://www.comidaereceitas.com.br/wp-content/uploads/2019/12/salada_mediterraea-780x596.jpg",
             "descricaoImg": "Salada mediterrânea",
             "nomePrato": "Salada mediterrânea",
             "descricaoPrato": "A salada mistura folhas verdes com legumes e grãos",
@@ -102,7 +102,8 @@
             "nomePrato": "Mignon ao molho de ervas",
             "descricaoPrato": "Medalhão servido com o molho de ervas e pimenta calabresa",
             "tempoPreparo": "Tempo de preparo: 40 minutos",
-            "preco": "R$ 48,90"
+            "preco": "R$ 58,90",
+            "secao": "carnesVermelhas"
         },
 
         {
@@ -111,7 +112,8 @@
             "nomePrato": "Coq au vin",
             "descricaoPrato": "Clássico francês feito com frango, vinho tinto e cogumelos",
             "tempoPreparo": "Tempo de preparo: 55 minutos",
-            "preco": "R$ 51,90"
+            "preco": "R$ 61,90",
+            "secao": "aves"
         },
 
         {
@@ -120,7 +122,8 @@
             "nomePrato": "Lagosta à Thermidor",
             "descricaoPrato": "Feita com lagosta, creme de leite, vinho e queijo prato",
             "tempoPreparo": "Tempo de preparo: 55 minutos",
-            "preco": "R$ 50,90"
+            "preco": "R$ 60,90",
+            "secao": "peixesFrutosDoMar"
         },
 
         {
@@ -129,7 +132,8 @@
             "nomePrato": "Capeletti in Brodo",
             "descricaoPrato": "Feita com Capeletti, alho-poró e salsão",
             "tempoPreparo": "Tempo de preparo: 35 minutos",
-            "preco": "R$ 44,90"
+            "preco": "R$ 54,90",
+            "secao": "massas"
         },
 
         {
@@ -138,7 +142,58 @@
             "nomePrato": "Risoto de camarões",
             "descricaoPrato": "Risoto de camarões com essência de trufa negra",
             "tempoPreparo": "Tempo de preparo: 35 minutos",
-            "preco": "R$ 47,90"
+            "preco": "R$ 57,90",
+            "secao": "risotos"
+        },
+
+        {
+            "img": "https://claudia.abril.com.br/wp-content/uploads/2020/02/costela-assada-bhofack2.jpg",
+            "descricaoImg": "Costela bovina",
+            "nomePrato": "Costela bovina",
+            "descricaoPrato": "Costela bovina assada durante 3 horas",
+            "tempoPreparo": "Tempo de preparo: 30 minutos",
+            "preco": "R$ 74,90",
+            "secao": "carnesVermelhas"
+        },
+
+        {
+            "img": "https://veja.abril.com.br/wp-content/uploads/2019/11/foie-gras.jpg",
+            "descricaoImg": "Foie gras com ervas",
+            "nomePrato": "Foie gras com ervas",
+            "descricaoPrato": "Foie gras com farofinha de ervas e grãos",
+            "tempoPreparo": "Tempo de preparo: 40 minutos",
+            "preco": "R$ 84,90",
+            "secao": "aves"
+        },
+
+        {
+            "img": "https://storage.googleapis.com/imagens_videos_gou_cooking_prod/production/mesas/2021/10/004d2b07-img_4995.jpg",
+            "descricaoImg": "Salmão com crosta de castanhas",
+            "nomePrato": "Salmão com castanhas",
+            "descricaoPrato": "Salmão com crosta de castanhas-do-pará",
+            "tempoPreparo": "Tempo de preparo: 45 minutos",
+            "preco": "R$ 74,90",
+            "secao": "peixesFrutosDoMar"
+        },
+
+        {
+            "img": "http://s2.glbimg.com/22hJiVgsl8Xe79R8mlsFiPBtJKM=/smart/e.glbimg.com/og/ed/f/original/2017/08/22/image5.jpg",
+            "descricaoImg": "Macarrão à Carbonara",
+            "nomePrato": "Macarrão à Carbonara",
+            "descricaoPrato": "Macarrão com molho à base de gemas e bacon",
+            "tempoPreparo": "Tempo de preparo: 45 minutos",
+            "preco": "R$ 64,90",
+            "secao": "massas"
+        },
+
+        {
+            "img": "https://lapercussi.com/website/wp-content/uploads/2021/06/risottoaifunghiporcini-la-percussi.jpg",
+            "descricaoImg": "Risoto de Funghi",
+            "nomePrato": "Risoto de Funghi Porcini",
+            "descricaoPrato": "Risoto à base de funghis",
+            "tempoPreparo": "Tempo de preparo: 40 minutos",
+            "preco": "R$ 71,90",
+            "secao": "risotos"
         }
     ],
 
@@ -188,5 +243,129 @@
             "tempoPreparo": "Tempo de preparo: 20 minutos",
             "preco": "R$ 38,90"
         }
+    ],
+
+    "bebidas": [
+
+        {
+            "img": "https://img.cybercook.com.br/imagens/receitas/818/suco-de-laranja-com-linhaca-1.jpeg",
+            "descricaoImg": "Suco de laranja",
+            "nomePrato": "Suco de laranja",
+            "descricaoPrato": "Suco feito de laranjas colhidas diariamente",
+            "tempoPreparo": "Tempo de preparo: 5 minutos",
+            "preco": "R$ 10,90",
+            "secao": "semAlcool"
+        },
+
+        {
+            "img": "https://api.vinicolagaribaldi.com.br/storage/pWzYYZJ1D8NBh7JvxNEl81KDuciNjXr2YwGsSX1W.png",
+            "descricaoImg": "Vinho Cabernet Sauvignon",
+            "nomePrato": "Vinho Cabernet Sauvignon",
+            "descricaoPrato": "Vinho com uvas Cabernet Sauvignon",
+            "tempoPreparo": "Tempo de preparo: 5 minutos",
+            "preco": "R$ 83,90",
+            "secao": "vinhos"
+        },
+
+        {
+            "img": "https://www.comidaereceitas.com.br/wp-content/uploads/2021/10/moscow_muiile-780x481.jpg",
+            "descricaoImg": "Moscow Mule",
+            "nomePrato": "Moscow Mule",
+            "descricaoPrato": "Vodka, limão e xarope de gengibre",
+            "tempoPreparo": "Tempo de preparo: 5 minutos",
+            "preco": "R$ 13,90",
+            "secao": "drinks"
+        },
+
+        {
+            "img": "https://classic.exame.com/wp-content/uploads/2019/10/corona122.jpg?quality=70&strip=info&w=680",
+            "descricaoImg": "Cerveja Corona",
+            "nomePrato": "Cerveja Corona",
+            "descricaoPrato": "Creveja Corona garrafa geladinha",
+            "tempoPreparo": "Tempo de preparo: 2 minutos",
+            "preco": "R$ 8,90",
+            "secao": "cervejas"
+        },
+
+        {
+            "img": "https://img.itdg.com.br/images/recipes/000/159/399/134494/134494_original.jpg",
+            "descricaoImg": "Soda italiana",
+            "nomePrato": "Soda italiana",
+            "descricaoPrato": "Sabores: morango, groselha e maçã verde",
+            "tempoPreparo": "Tempo de preparo: 5 minutos",
+            "preco": "R$ 13,90",
+            "secao": "semAlcool"
+        },
+
+        {
+            "img": "https://cdn.dooca.store/239/products/siehygaghaujuno6hyuw7ftt4uso5necgm5e_640x640+fill_ffffff.jpg?v=1620157491&webp=0",
+            "descricaoImg": "Água Voss",
+            "nomePrato": "Água Voss",
+            "descricaoPrato": "Água Voss importada da torneira",
+            "tempoPreparo": "Tempo de preparo: 1 minuto",
+            "preco": "R$ 12,90",
+            "secao": "semAlcool"
+        },
+
+        {
+            "img": "https://pbs.twimg.com/media/EcGcJ-1XkAMrIuB.jpg",
+            "descricaoImg": "Vinho Campo Largo",
+            "nomePrato": "Vinho Campo Largo",
+            "descricaoPrato": "Vinho Campo Largo Importado da geladeira",
+            "tempoPreparo": "Tempo de preparo: 2 minutos",
+            "preco": "R$ 120,90",
+            "secao": "vinhos"
+        },
+
+        {
+            "img": "https://revistaadega.uol.com.br/media/porto_23042021.jpg",
+            "descricaoImg": "Vinho do Porto",
+            "nomePrato": "Vinho do Porto",
+            "descricaoPrato": "Vinho licoroso envelhecido em Porto",
+            "tempoPreparo": "Tempo de preparo: 3 minutos",
+            "preco": "R$ 220,90",
+            "secao": "vinhos"
+        },
+
+        {
+            "img": "https://img.estadao.com.br/resources/jpg/9/3/1532640931039.jpg",
+            "descricaoImg": "Caipirinha de limão",
+            "nomePrato": "Caipirinha de limão",
+            "descricaoPrato": "Caipirinha de limões colhidos diariamente",
+            "tempoPreparo": "Tempo de preparo: 2 minutos",
+            "preco": "R$ 24,90",
+            "secao": "drinks"
+        },
+
+        {
+            "img": "https://img.cybercook.com.br/imagens/receitas/687/margarita-tradicional.jpg?w=350&h=230&fit=crop",
+            "descricaoImg": "Margarita",
+            "nomePrato": "Margarita",
+            "descricaoPrato": "Tequila, sal sumo de limão e laranja",
+            "tempoPreparo": "Tempo de preparo: 5 minutos",
+            "preco": "R$ 22,90",
+            "secao": "drinks"
+        },
+
+        {
+            "img": "https://storage.googleapis.com/domain-images/d852905e-233a-4bed-b203-8aeba39a97b7/products/gallery_5c300fe6-9d67-403d-a9ee-425f09fdd3bf.jpg",
+            "descricaoImg": "Cerveja Skol",
+            "nomePrato": "Cerveja Skol",
+            "descricaoPrato": "Cerveja Skol importada da geladeira",
+            "tempoPreparo": "Tempo de preparo: 2 minutos",
+            "preco": "R$ 15,90",
+            "secao": "cervejas"
+        },
+
+        {
+            "img": "https://supernossoio.vtexassets.com/arquivos/ids/218962/Cerveja-Brahma-Duplo-Malte-Puro-Malte-Lata-350ml.jpg?v=637808125835630000",
+            "descricaoImg": "Cerveja Brahma",
+            "nomePrato": "Cerveja Brahma",
+            "descricaoPrato": "Cerveja Brahma importada do freezer",
+            "tempoPreparo": "Tempo de preparo: 2 minutos",
+            "preco": "R$ 10,90",
+            "secao": "cervejas"
+        }
+
     ]
 }

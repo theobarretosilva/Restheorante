@@ -29,21 +29,17 @@ function filtrar(){
     {secoes.sobremesas.map((item, index) => {
       return <Card card={item} key={index} />;
     })}
-  } else if(secao == bebidas){
-    {secoes.bebidas.map((item, index) => {
-      return <Card card={item} key={index} />;
-    })}
-  }
+  } 
 }
 
-function percorreSub2(){
-  if(subSecoes.length > 0){
-    subSecoes.map((item, index) => {
-      return <ul><li key={index}><h3>{item}</h3></li></ul>
-    })
-    const teste = secoes.filter(filtrar());
-  }
-}
+// function percorreSub2(){
+//   if(subSecoes.length > 0){
+//     subSecoes.map((item, index) => {
+//       return <ul><li key={index}><h3>{item}</h3></li></ul>
+//     })
+//     const teste = secoes.filter(filtrar());
+//   }
+// }
 
 export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas, bSecoes}) => {
 
@@ -53,34 +49,19 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
         <div id="div1"></div>
         <div className="secoes">
           <div>
-            <a onClick={percorreSub2()}><h2 value="entradas" className="nomeSecao">{entradas}</h2></a>
-            <ul>
-              <li>{bSecoes}</li>
-            </ul>
+            <h2 value="entradas" className="nomeSecao">{entradas}</h2>
           </div>
           <div>
-            <a onClick={percorreSub2()}><h2 value="saladas" className="nomeSecao">{saladas}</h2></a>
-            <ul>
-              <li>{bSecoes}</li>
-            </ul>
+            <h2 value="saladas" className="nomeSecao">{saladas}</h2>
           </div>
           <div>
-            <a onClick={percorreSub2()}><h2 value="pratosPrincipais" className="nomeSecao">{pratosPrincipais}</h2></a>
-            <ul>
-              <li>{bSecoes}</li>
-            </ul>
+            <h2 value="pratosPrincipais" className="nomeSecao">{pratosPrincipais}</h2>
           </div>
           <div>
-            <a onClick={percorreSub2()}><h2 value="sobremesas" className="nomeSecao">{sobremesas}</h2></a>
-            <ul>
-              <li>{bSecoes}</li>
-            </ul>
+            <h2 value="sobremesas" className="nomeSecao">{sobremesas}</h2>
           </div>
           <div>
-            <a onClick={percorreSub2()}><h2 value="bebidas" className="nomeSecao" id="nomeSecao">{bebidas}</h2></a>
-            <ul>
-              <li>{bSecoes}</li>
-            </ul>
+            <h2 value="bebidas" id="nomeSecao">{bebidas}</h2>
           </div>
         </div>
         <div id="div2"></div>
@@ -97,6 +78,9 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
           return <Card card={item} key={index} />;
         })}
         {secoes.sobremesas.map((item, index) => {
+          return <Card card={item} key={index} />;
+        })}
+        {secoes.bebidas.map((item, index) => {
           return <Card card={item} key={index} />;
         })}
       </div>
