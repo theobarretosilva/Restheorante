@@ -3,8 +3,7 @@ import "./Secoes.css";
 import secoes from "../../secoes.json";
 import PropTypes from 'prop-types'
 
-const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Massas", "Risotos"];
-const subSecoesB = [];
+
 
 function percorreSubSecoesPP(){
   if(subSecoesPP.length > 0){
@@ -53,11 +52,11 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
       </div>
 
       <div className="secoesECards">
-        <div className="divSubSecoes">
+        {/* <div className="divSubSecoes">
           {subSecoesPP.map((item, index) => {
               return <SubSecoes subSecoes={item} key={index} />
             })}
-        </div>
+        </div> */}
 
         <div className="secoesCards">
           {secoes.entradas.map((item, index) => {
