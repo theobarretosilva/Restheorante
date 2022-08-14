@@ -39,31 +39,34 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
         <div id="div2"></div>
       </div>
 
-      <div className="subSecoes">
-        <h3>Carnes Vermelhas</h3>
-        <h3>Aves</h3>
-        <h3>Peixes e frutos do mar</h3>
-        <h3>Massas</h3>
-        <h3>Risotos</h3>
-      </div>
+      <div className="secoesECards">
+        <div className="divSubSecoes">
+          <h3 className="subSecoes">Carnes Vermelhas</h3>
+          <h3 className="subSecoes">Aves</h3>
+          <h3 className="subSecoes">Peixes e frutos do mar</h3>
+          <h3 className="subSecoes">Massas</h3>
+          <h3 className="subSecoes">Risotos</h3>
+        </div>
 
-      <div className="secoesCards">
-        {secoes.entradas.map((item, index) => {
-          return <Card card={item} key={index} />;
-        })}
-        {secoes.saladas.map((item, index) => {
-          return <Card card={item} key={index} />;
-        })}
-        {secoes.pratosPrincipais.map((item, index) => {
-          return <Card card={item} key={index} />;
-        })}
-        {secoes.sobremesas.map((item, index) => {
-          return <Card card={item} key={index} />;
-        })}
-        {secoes.bebidas.map((item, index) => {
-          return <Card card={item} key={index} />;
-        })}
+        <div className="secoesCards">
+          {secoes.entradas.map((item, index) => {
+            return <Card card={item} key={index} />;
+          })}
+          {secoes.saladas.map((item, index) => {
+            return <Card card={item} key={index} />;
+          })}
+          {secoes.pratosPrincipais.map((item, index) => {
+            return <Card card={item} key={index} />;
+          })}
+          {secoes.sobremesas.map((item, index) => {
+            return <Card card={item} key={index} />;
+          })}
+          {secoes.bebidas.map((item, index) => {
+            return <Card card={item} key={index} />;
+          })}
+        </div>
       </div>
+      
     </div>
   );
 };

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.divGeralSecoes{
-    display: flex;
-    text-align: center;
+.divGeralSecoes {
+  display: flex;
+  text-align: center;
 }
 
-.divSecoes{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+.divSecoes {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
 
 /* body{
@@ -24,83 +24,116 @@
     background-size: cover;
 } */
 
-#div1{
-    background: rgba(0, 0, 0, 0.5);
-    width: 180px;
-    height: 140px;
+#div1 {
+  background: rgba(0, 0, 0, 0.5);
+  width: 180px;
+  height: 140px;
 }
 
-#div2{
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    width: 180px;
-    height: 100%;
+#div2 {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 180px;
+  height: 100%;
 }
 
-.secoes{
-    background-color: #666666;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 180px;
+.secoes {
+  background-color: #666666;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 180px;
 }
 
-.subSecoes{
-    
+.divSubSecoes {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 60px;
 }
 
-.nomeSecao{
-    font-family: 'Urbanist', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 17px;
-    color: black;
-    margin: 5%;
-    padding-top: 12px;
-    padding-bottom: 26px;
-    border-bottom: 2px solid white;
-    cursor: pointer;
+.subSecoes {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  cursor: pointer;
+  display: inline;
+  margin: 26px;
 }
 
-.nomeSecao:hover{
-    font-family: 'Urbanist', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 17px;
-    color: red;
-    margin: 5%;
-    padding-top: 12px;
-    padding-bottom: 26px;
-    border-bottom: 2px solid white;
-    cursor: pointer;
+.subSecoes:hover {
+  border-bottom: 2px solid red;
+  color: red;
 }
 
-#nomeSecao{
-    font-family: 'Urbanist', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 17px;
-    color: black;
-    margin: 5%;
-    padding-top: 10px;
-    padding-bottom: 12px;
+.nomeSecao {
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  color: black;
+  margin: 5%;
+  padding-top: 12px;
+  padding-bottom: 26px;
+  border-bottom: 2px solid white;
+  cursor: pointer;
 }
 
-.linha{
-    text-align: center;
-    justify-content: center;
-    border: 1px solid #FFFFFF;
-    width: 80%;
+.nomeSecao:hover {
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  color: red;
+  margin: 5%;
+  padding-top: 12px;
+  padding-bottom: 26px;
+  border-bottom: 2px solid white;
+  cursor: pointer;
 }
 
-.secoesCards{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+#nomeSecao {
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  color: black;
+  margin: 5%;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+#nomeSecao:hover {
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  color: red;
+  margin: 5%;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.linha {
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  width: 80%;
+}
+
+.secoesCards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
