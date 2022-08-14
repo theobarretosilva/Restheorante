@@ -190,9 +190,59 @@
             "img": "https://lapercussi.com/website/wp-content/uploads/2021/06/risottoaifunghiporcini-la-percussi.jpg",
             "descricaoImg": "Risoto de Funghi",
             "nomePrato": "Risoto de Funghi Porcini",
-            "descricaoPrato": "Risoto à base de funghis",
+            "descricaoPrato": "Risoto à base de funghis e Porcini",
             "tempoPreparo": "Tempo de preparo: 40 minutos",
             "preco": "R$ 71,90",
+            "secao": "risotos"
+        },
+
+        {
+            "img": "https://img.estadao.com.br/thumbs/640/resources/jpg/6/5/1610836659956.jpg",
+            "descricaoImg": "Bife Wellington",
+            "nomePrato": "Bife Wellington",
+            "descricaoPrato": "Filé envolto em massa folhada francesa",
+            "tempoPreparo": "Tempo de preparo: 55 minutos",
+            "preco": "R$ 81,90",
+            "secao": "carnesVermelhas"
+        },
+
+        {
+            "img": "https://www.tendaatacado.com.br/dicas/wp-content/uploads/2022/03/escondidinho-de-frango-interna.jpg",
+            "descricaoImg": "Frango às Escondidas",
+            "nomePrato": "Frango às Escondidas",
+            "descricaoPrato": "Peitos de frango cobertos por purê de batatas",
+            "tempoPreparo": "Tempo de preparo: 35 minutos",
+            "preco": "R$ 51,90",
+            "secao": "aves"
+        },
+
+        {
+            "img": "https://media-cdn.tripadvisor.com/media/photo-s/0e/0b/c7/3c/ostras-ao-bafo.jpg",
+            "descricaoImg": "Ostras ao bafo",
+            "nomePrato": "Ostras ao bafo",
+            "descricaoPrato": "Ostras d'água doce cozidas por 2 horas brandas",
+            "tempoPreparo": "Tempo de preparo: 50 minutos",
+            "preco": "R$ 41,90",
+            "secao": "peixesFrutosDoMar"
+        },
+
+        {
+            "img": "https://media-cdn.tripadvisor.com/media/photo-s/08/88/fc/97/pizza-egipcia-roquefort.jpg",
+            "descricaoImg": "Pizza ao estilo egípcio",
+            "nomePrato": "Pizza ao estilo egípcio",
+            "descricaoPrato": "Pizza ao estilo egípcio direto do Egito",
+            "tempoPreparo": "Tempo de preparo: 1 dia",
+            "preco": "R$ 141,90",
+            "secao": "massas"
+        },
+
+        {
+            "img": "https://cozinhatravessa.com.br/wp-content/uploads/2012/10/risoto-de-manga-com-bacon01.jpg",
+            "descricaoImg": "Risoto de manga e bacon",
+            "nomePrato": "Risoto de manga e bacon",
+            "descricaoPrato": "Risoto composto por manga e bacon",
+            "tempoPreparo": "Tempo de preparo: 45 minutos",
+            "preco": "R$ 41,90",
             "secao": "risotos"
         }
     ],
