@@ -89,6 +89,7 @@
   margin: 5%;
   padding-top: 10px;
   padding-bottom: 12px;
+  cursor: pointer;
 }
 
 #nomeSecao:hover {
@@ -101,6 +102,7 @@
   margin: 5%;
   padding-top: 10px;
   padding-bottom: 12px;
+  cursor: pointer;
 }
 
 .linha {

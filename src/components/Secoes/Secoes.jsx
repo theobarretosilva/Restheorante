@@ -1,28 +1,29 @@
 import { Card } from "../Card/Card";
+import { SubSecoes } from "../SubSecoes/SubSecoes";
 import "./Secoes.css";
 import secoes from "../../secoes.json";
 import PropTypes from 'prop-types'
+import html from 'react-inner-html'
 
-
+const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Massas", "Risotos"];
+const subSecoesB = ["Sem àlcool", "Vinhos", "Drinks", "Cervejas"];
 
 function percorreSubSecoesPP(){
+  const divSubSecoes = document.getElementById('divSubSecoes');
   if(subSecoesPP.length > 0){
     subSecoesPP.map((item, index) => {
-      return (
-        <div>
-          <h3 key={index} className="subSecoes">{item}</h3>
-          <h3 key={index} className="subSecoes">{item}</h3>
-          <h3 key={index} className="subSecoes">{item}</h3>
-          <h3 key={index} className="subSecoes">{item}</h3>
-          <h3 key={index} className="subSecoes">{item}</h3>
-        </div>
-      )
+      return divSubSecoes.innerHTML = <h3 key={index}>{item}</h3>
     })
   }
 }
 
 function percorreSubSecoesB(){
-
+  const divSubSecoes = document.getElementById('divSubSecoes');
+  if(subSecoesB.length > 0){
+    subSecoesPP.map((item, index) => {
+      return divSubSecoes.innerHTML = <SubSecoes subSecoes={item} key={index} />
+    })
+  }
 }
 
 export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas}) => {
@@ -39,24 +40,22 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
             <h2 value="saladas" className="nomeSecao">{saladas}</h2>
           </div>
           <div>
-            <h2 value="pratosPrincipais" className="nomeSecao">{pratosPrincipais}</h2>
+            <h2 onClick={percorreSubSecoesPP} id="pratosPrincipais" value="pratosPrincipais" className="nomeSecao">{pratosPrincipais}</h2>
           </div>
           <div>
             <h2 value="sobremesas" className="nomeSecao">{sobremesas}</h2>
           </div>
           <div>
-            <h2 value="bebidas" id="nomeSecao">{bebidas}</h2>
+            <h2 onClick={percorreSubSecoesB} value="bebidas" id="nomeSecao">{bebidas}</h2>
           </div>
         </div>
         <div id="div2"></div>
       </div>
 
       <div className="secoesECards">
-        {/* <div className="divSubSecoes">
-          {subSecoesPP.map((item, index) => {
-              return <SubSecoes subSecoes={item} key={index} />
-            })}
-        </div> */}
+        <div id="divSubSecoes" className="divSubSecoes">
+          
+        </div>
 
         <div className="secoesCards">
           {secoes.entradas.map((item, index) => {
@@ -92,7 +91,6 @@ Secoes.propTypes = {
     saladas: PropTypes.string.isRequired,
     pratosPrincipais: PropTypes.string.isRequired,
     sobremesas: PropTypes.string.isRequired,
-    bebidas: PropTypes.string.isRequired,
-    subSecoes: PropTypes.array
+    bebidas: PropTypes.string.isRequired
   })
 }

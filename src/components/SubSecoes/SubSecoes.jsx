@@ -1,10 +1,6 @@
 import './SubSecoes.css'
-import secoes from "../../secoes.json";
 import PropTypes from 'prop-types'
 
-export const SubSecoes = ({subSecao}) => {
-
-    return (
-        
-    )
+export const SubSecoes = ({subSecoes: {subSecao}}) => {
+    return <h3>{subSecao}</h3>
 }
