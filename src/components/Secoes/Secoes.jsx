@@ -3,17 +3,30 @@ import "./Secoes.css";
 import secoes from "../../secoes.json";
 import PropTypes from 'prop-types'
 
-const subSecoes = [];
+const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Massas", "Risotos"];
+const subSecoesB = [];
 
-// function percorreSubSecoes(){
-//   if(subSecoes.length > 0){
-//     return (
-      
-//     )
-//   }
-// }
+function percorreSubSecoesPP(){
+  if(subSecoesPP.length > 0){
+    subSecoesPP.map((item, index) => {
+      return (
+        <div>
+          <h3 key={index} className="subSecoes">{item}</h3>
+          <h3 key={index} className="subSecoes">{item}</h3>
+          <h3 key={index} className="subSecoes">{item}</h3>
+          <h3 key={index} className="subSecoes">{item}</h3>
+          <h3 key={index} className="subSecoes">{item}</h3>
+        </div>
+      )
+    })
+  }
+}
 
-export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas, bSecoes}) => {
+function percorreSubSecoesB(){
+
+}
+
+export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas}) => {
 
   return (
     <div className="divGeralSecoes">
@@ -41,11 +54,9 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
 
       <div className="secoesECards">
         <div className="divSubSecoes">
-          <h3 className="subSecoes">Carnes Vermelhas</h3>
-          <h3 className="subSecoes">Aves</h3>
-          <h3 className="subSecoes">Peixes e frutos do mar</h3>
-          <h3 className="subSecoes">Massas</h3>
-          <h3 className="subSecoes">Risotos</h3>
+          {subSecoesPP.map((item, index) => {
+              return <SubSecoes subSecoes={item} key={index} />
+            })}
         </div>
 
         <div className="secoesCards">
