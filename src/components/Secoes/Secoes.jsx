@@ -3,41 +3,13 @@ import "./Secoes.css";
 import secoes from "../../secoes.json";
 import PropTypes from 'prop-types'
 
-const subSecoes = ["Carnes", "Massas"];
+const subSecoes = [];
 
-// const percorreSub = () => {
-//   subSecoes.length > 0 ? (subSecoes.map((item, index) => {
-//     return <ul><li key={index}><h3>{item}</h3></li></ul>
-//   })) : Secoes
-// }
-
-function filtrar(){
-  const secao = document.getElementsByClassName('nomeSecao').value;
-  if(secao == "entradas"){
-    {secoes.entradas.map((item, index) => {
-      return <Card card={item} key={index} />;
-    })}
-  } else if(secao == "saladas"){
-    {secoes.saladas.map((item, index) => {
-      return <Card card={item} key={index} />;
-    })} 
-  } else if(secao == "pratosPrincipais"){
-    {secoes.pratosPrincipais.map((item, index) => {
-      return <Card card={item} key={index} />;
-    })}
-  } else if(secao == "sobremesas"){
-    {secoes.sobremesas.map((item, index) => {
-      return <Card card={item} key={index} />;
-    })}
-  } 
-}
-
-// function percorreSub2(){
+// function percorreSubSecoes(){
 //   if(subSecoes.length > 0){
-//     subSecoes.map((item, index) => {
-//       return <ul><li key={index}><h3>{item}</h3></li></ul>
-//     })
-//     const teste = secoes.filter(filtrar());
+//     return (
+      
+//     )
 //   }
 // }
 
@@ -65,6 +37,14 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
           </div>
         </div>
         <div id="div2"></div>
+      </div>
+
+      <div className="subSecoes">
+        <h3>Carnes Vermelhas</h3>
+        <h3>Aves</h3>
+        <h3>Peixes e frutos do mar</h3>
+        <h3>Massas</h3>
+        <h3>Risotos</h3>
       </div>
 
       <div className="secoesCards">

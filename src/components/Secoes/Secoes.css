@@ -45,6 +45,10 @@
     width: 180px;
 }
 
+.subSecoes{
+    
+}
+
 .nomeSecao{
     font-family: 'Urbanist', sans-serif;
     font-style: normal;
@@ -52,6 +56,20 @@
     font-size: 18px;
     line-height: 17px;
     color: black;
+    margin: 5%;
+    padding-top: 12px;
+    padding-bottom: 26px;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.nomeSecao:hover{
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+    color: red;
     margin: 5%;
     padding-top: 12px;
     padding-bottom: 26px;
