@@ -16,3 +16,9 @@
     border-bottom: 2px solid red;
     color: red;
 }
+
+.divSubSecoes {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}

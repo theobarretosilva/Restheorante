@@ -3,19 +3,9 @@ import { SubSecoes } from "../SubSecoes/SubSecoes";
 import "./Secoes.css";
 import secoes from "../../secoes.json";
 import PropTypes from 'prop-types'
-import html from 'react-inner-html'
 
 const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Massas", "Risotos"];
 const subSecoesB = ["Sem àlcool", "Vinhos", "Drinks", "Cervejas"];
-
-function percorreSubSecoesPP(){
-  if(subSecoesPP.length > 0){
-    subSecoesPP.map((item, index) => {
-      return <h3 key={index}>{item}</h3>
-    })
-
-  }
-}
 
 function percorreSubSecoesB(){
   if(subSecoesB.length > 0){
@@ -26,7 +16,6 @@ function percorreSubSecoesB(){
 }
 
 export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas}) => {
-
   return (
     <div className="divGeralSecoes">
       <div className="divSecoes">
@@ -39,13 +28,13 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
             <h2 value="saladas" className="nomeSecao">{saladas}</h2>
           </div>
           <div>
-            <h2 onClick={percorreSubSecoesPP} id="pratosPrincipais" value="pratosPrincipais" className="nomeSecao">{pratosPrincipais}</h2>
+            <h2 id="pratosPrincipais" value="pratosPrincipais" className="nomeSecao">{pratosPrincipais}</h2>
           </div>
           <div>
             <h2 value="sobremesas" className="nomeSecao">{sobremesas}</h2>
           </div>
           <div>
-            <h2 onClick={percorreSubSecoesB} value="bebidas" id="nomeSecao">{bebidas}</h2>
+            <h2 value="bebidas" id="nomeSecao">{bebidas}</h2>
           </div>
         </div>
         <div id="div2"></div>
@@ -53,9 +42,11 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
 
       <div className="secoesECards">
         <div id="divSubSecoes" className="divSubSecoes">
-          
+          {subSecoesPP.map((item, index) => {
+            return <SubSecoes subSecoes={item} key={index} />;
+          })}
         </div>
-
+ 
         <div className="secoesCards">
           {secoes.entradas.map((item, index) => {
             return <Card card={item} key={index} />;
