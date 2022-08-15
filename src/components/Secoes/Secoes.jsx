@@ -7,6 +7,12 @@ import PropTypes from 'prop-types'
 const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Massas", "Risotos"];
 const subSecoesB = ["Sem àlcool", "Vinhos", "Drinks", "Cervejas"];
 
+const calma = () => {
+  secoes.pratosPrincipais.map((item, index) => {
+    return <Card card={item} key={index} />;
+  })
+}
+
 function percorreSubSecoesB(){
   if(subSecoesB.length > 0){
     subSecoesB.map((item, index) => {
@@ -29,6 +35,13 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
           </div>
           <div>
             <h2 id="pratosPrincipais" value="pratosPrincipais" className="nomeSecao">{pratosPrincipais}</h2>
+            {subSecoesPP?.length > 0 ? 
+            (subSecoesPP.map((item, index) => {
+            return <SubSecoes subSecao={item} key={index} />
+            })) : 
+            (secoes.entradas.map((item, index) => {
+              return <Card card={item} key={index} />;
+            }))}
           </div>
           <div>
             <h2 value="sobremesas" className="nomeSecao">{sobremesas}</h2>
@@ -42,9 +55,10 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
 
       <div className="secoesECards">
         <div id="divSubSecoes" className="divSubSecoes">
-          {subSecoesPP.map((item, index) => {
+          
+          {/* {subSecoesPP.map((item, index) => {
             return <SubSecoes subSecao={item} key={index} />;
-          })}
+          })} */}
         </div>
  
         <div className="secoesCards">
