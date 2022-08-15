@@ -9,20 +9,18 @@ const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Mass
 const subSecoesB = ["Sem àlcool", "Vinhos", "Drinks", "Cervejas"];
 
 function percorreSubSecoesPP(){
-  const divSubSecoes = document.getElementById('divSubSecoes');
   if(subSecoesPP.length > 0){
     subSecoesPP.map((item, index) => {
-      return divSubSecoes.innerHTML = `<h3 key=${index}>${item}</h3>`
+      return <h3 key={index}>{item}</h3>
     })
 
   }
 }
 
 function percorreSubSecoesB(){
-  const divSubSecoes = document.getElementById('divSubSecoes');
   if(subSecoesB.length > 0){
     subSecoesB.map((item, index) => {
-      return divSubSecoes.innerHTML = `<h3 key=${index}>${item}</h3>`
+      return <h3 key={index}>{item}</h3>
     })
   }
 }
