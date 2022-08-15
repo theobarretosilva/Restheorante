@@ -2,7 +2,7 @@ import './SubSecoes.css'
 
 import PropTypes from 'prop-types'
 
-export const SubSecoes = ({subSecoes: {subSecao}}) => {
+export const SubSecoes = ({subSecao}) => {
     return <h3 className='subSecoes'>{subSecao}</h3>
 }
 

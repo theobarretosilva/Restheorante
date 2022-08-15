@@ -43,7 +43,7 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
       <div className="secoesECards">
         <div id="divSubSecoes" className="divSubSecoes">
           {subSecoesPP.map((item, index) => {
-            return <SubSecoes subSecoes={item} key={index} />;
+            return <SubSecoes subSecao={item} key={index} />;
           })}
         </div>
  
