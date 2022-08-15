@@ -12,16 +12,17 @@ function percorreSubSecoesPP(){
   const divSubSecoes = document.getElementById('divSubSecoes');
   if(subSecoesPP.length > 0){
     subSecoesPP.map((item, index) => {
-      return divSubSecoes.innerHTML = <h3 key={index}>{item}</h3>
+      return divSubSecoes.innerHTML = `<h3 key=${index}>${item}</h3>`
     })
+
   }
 }
 
 function percorreSubSecoesB(){
   const divSubSecoes = document.getElementById('divSubSecoes');
   if(subSecoesB.length > 0){
-    subSecoesPP.map((item, index) => {
-      return divSubSecoes.innerHTML = <SubSecoes subSecoes={item} key={index} />
+    subSecoesB.map((item, index) => {
+      return divSubSecoes.innerHTML = `<h3 key=${index}>${item}</h3>`
     })
   }
 }
