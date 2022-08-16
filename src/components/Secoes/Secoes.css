@@ -106,6 +106,12 @@
   width: 80%;
 }
 
+.divSubSecoes{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
 .secoesCards {
   display: flex;
   justify-content: space-around;

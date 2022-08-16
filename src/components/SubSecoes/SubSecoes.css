@@ -5,14 +5,18 @@
 
 .subSecoes {
     margin-top: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     color: white;
     font-family: "Urbanist", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
     cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    display: inline;
 }
-  
-.subSecoes:hover {
+
+.subSecoes:hover{
     color: red;
+    border-bottom: 2px solid red;
 }
