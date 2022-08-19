@@ -7,14 +7,22 @@ import PropTypes from 'prop-types'
 const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Massas", "Risotos"];
 const subSecoesB = ["Sem àlcool", "Vinhos", "Drinks", "Cervejas"];
 
+function calma(){
+  if(subSecoesPP.length > 0){
+    subSecoesPP.map((item, index) => {
+      return <SubSecoes subSecoes={item} key={index} />
+    })
+    
+  }
+    
+}
+
+
 export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas}) => {
   return (
     <div className="secoesCards">
       <div>
         <h2 className="nomeSecao">{entradas}</h2>
-        {subSecoesPP.map((item, index) => {
-          return <SubSecoes subSecoes={item} key={index} />;
-        })}
         <div className="cards">
           {secoes.entradas.map((item, index) => {
             return <Card card={item} key={index} />;
@@ -32,9 +40,7 @@ export const Secoes = ({entradas, saladas, pratosPrincipais, sobremesas, bebidas
       <div className="divCards">
         <h2 className="nomeSecao">{pratosPrincipais}</h2>
         <div className="cards">
-          {secoes.pratosPrincipais.map((item, index) => {
-            return <Card card={item} key={index} />;
-          })}
+          {}
         </div>
       </div>
       <div className="divCards">
