@@ -2,15 +2,14 @@ import { SubSecoes } from "../SubSecoes/SubSecoes";
 import { ListaCards } from "../ListaCards/ListaCards";
 import "./Secoes.css";
 import PropTypes from 'prop-types'
+import secoes from '../../secoes.json'
 
-const subSecoesPP = ["Carnes vermelhas", "Aves", "Peixes e frutos do mar", "Massas", "Risotos"];
-const subSecoesB = ["Sem àlcool", "Vinhos", "Drinks", "Cervejas"];
-
-export const Secoes = ({nome, produtos, subSecoes}) => {
+export const Secoes = ({ nome, produtos, subSecoes }) => {
   return (
     <div className="secoesCards">
       <div>
         <h2 className="nomeSecao">{nome}</h2>
+        <hr />
       </div>
     
       {subSecoes?.lenght > 0 ? (

@@ -5,8 +5,8 @@ import { Card } from '../Card/Card'
 export const ListaCards = ({ produtos }) => (
     <ul>
         {produtos.map((produto) => (
-            <li key={produto.index}>
-                <Card card={produto} />
+            <li key={produto.nomePrato}>
+                <Card produto={produto} />
             </li>
         ))}
     </ul>
