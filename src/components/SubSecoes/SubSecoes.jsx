@@ -1,13 +1,22 @@
 import './SubSecoes.css'
-
 import PropTypes from 'prop-types'
+import { ListaCards } from '../ListaCards/ListaCards'
 
-export const SubSecoes = ({subSecoes: {subSecao}}) => {
-    return <h3 className='subSecoes'>{subSecao}</h3>
-}
+export const SubSecoes = ({ produtos, subSecao }) => {
+    const produtosFiltrados = produtos.filter((prod) => prod.secao === subSecao);
+
+    return (
+        <div>
+            <div>
+                <h3>{subSecao}</h3>
+            </div>
+
+            <ListaCards produtos={produtosFiltrados} />
+        </div>
+    );
+};
 
 SubSecoes.propTypes = {
-    subSecoes: PropTypes.shape({
-        subSecao: PropTypes.string.isRequired
-    })
-}
+    produtos: PropTypes.array.isRequired,
+    subSecao: PropTypes.string,
+};
